@@ -1,0 +1,600 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+section{
+    height: 100vh;
+    padding: 100px 0;
+    background-color: #000;
+    overflow: hidden;
+}
+.max-width{
+    max-width: 1400px;
+    padding: 0 80px;
+    margin: auto;
+}
+.home .column,
+.about .column,
+.skills .column,
+.project .serv-content,
+.contact .column{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .max-width{
+    max-width: 1000px;
+}
+.home{
+    background-color:rgb(65, 36, 36);
+    height: 100vh;
+    color: white;
+}
+.home .column .homel {
+    padding-top: 40px;
+}
+.home .homel img{
+    width: 90%;
+    margin-left: -4em;
+    border-radius: 50%;
+}
+.home .column .homer{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home .homer h1{
+    font-size: 60px;
+    position: relative;
+    right: 80px;
+}
+.home .homer p{
+    font-size: 28px;
+    letter-spacing: .1em;
+}
+
+@media only screen and (max-width:1200px){
+    .home{
+        height: 80vh;
+    }
+}
+@media only screen and (max-width:950px) {
+    .home{
+        height: 60vh;
+    }
+    .column{
+    display: flex;
+    flex-direction: row;
+    }
+    .home .column .homel{
+        margin-top: -5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+    .home .homel img{
+        width: 60%;
+    }
+    .home .column .homer{
+        display: inline;
+        width: 100%;
+    }
+    .home .column .homer h1{
+        font-size: 30px;
+        position: relative;
+        left: 0;
+    }
+    .home .column .homer p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:800px){
+    .home{
+        height: 60vh;
+        padding-bottom: 30rem;
+    }
+}
+@media only screen and (max-width:600px){
+    .home{
+        height: 60vh;
+    }
+}
+
+
+
+
+
+.about .max-width{
+    max-width: 1100px;
+    padding: 0 80px;
+    margin: auto;
+}
+.about .aboutl{
+    color: white;
+    padding-left: 3px;
+    margin-top: 10rem;
+}
+.about .aboutl h1{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    font-weight: 400;
+}
+.about .aboutr{
+    padding-right: 3rem;
+    margin-top: -40px;
+}
+.about .aboutr img{
+    height: 550px;
+    width: 140%;
+}
+
+@media (max-width:1200px){
+    .about .max-width{
+        width: 100%;
+        height: 80vh;
+    }
+    .about .column .aboutl{
+        position: relative;
+        margin-top: -50px;
+    }
+    .about .column .aboutl h1{
+        font-size: 20px;
+    }
+    .about .column .aboutr{
+        padding-top: 70px;
+    }
+    .about .column .aboutr img{
+        width: 80%;
+        height: 300px;
+        padding-left: 40px;
+    }
+}
+@media (max-width:900px){
+    .about{
+        height: 40vh;
+        width: 100%;
+    }
+    .about .column .aboutr img{
+        width: 200%;
+        height: 200px;
+        padding-left: 10px;
+    }
+}
+@media (max-width:800px){
+    .about{
+        height: 60vh;
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+    .about{
+        height: 80vh;
+    }
+}
+
+
+
+
+
+.skills{
+    height: 100vh;
+}
+.skills .max-width{
+    max-width: 1000px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+}
+.skills .column .columnl{
+    width:10%;
+    color: white;
+}
+.skills .column .columnl .text{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.skills .column .columnr{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20rem;
+}
+.skills .column .columnr .bars{
+    height: 15vh;
+}
+.skills .column .columnr .info{
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.skills .column .columnr span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .column .columnr .line{
+    height: 30px;
+    width: 90%;
+    background: rgb(234, 138, 154);
+    border-radius: 20px;
+    position: relative;
+}
+.skills .column .columnr .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background: white;
+}
+.column .columnr .html::before{
+    width: 80%;
+}
+.column .columnr .css::before{
+    width: 80%;
+}
+.column .columnr .js::before{
+    width: 80%;
+}
+.column .columnr .photoshop::before{
+    width: 80%;
+}
+
+
+@media only screen and (max-width:1200px){
+    .skills{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width:950px) {
+    .skills{
+        height: 80vh;
+        width: 100%;
+    }
+    .skills .column{
+        display: flex;
+        flex-direction: row;
+    }
+    .skills .column .columnr{
+        position: absolute;
+        top: 1450px;
+        right: 20%;
+        width: 100%;
+        height: 100px;
+    }
+  
+}
+@media only screen and (max-width:800px) {
+    .skills{
+        height: 80vh;
+        width: 100%;
+    }
+    .skills .column{
+        display: flex;
+        flex-direction: row;
+    }
+   
+  
+}
+@media only screen and (max-width:750px){
+    .skills{
+        height: 100vh;
+    }
+    .skills .column .columnr{
+        position: absolute;
+        top: 1400px;
+        right: 30%;
+        width: 100%;
+        height: 120px;
+    }
+}
+@media only screen and (max-width:500px){
+    .skills .column .columnr{
+        position: absolute;
+        top: 1490px;
+        right: 10%;
+        width: 150%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .skills{
+        height: 100vh;
+    }
+    .skills .column .columnr{
+        position: absolute;
+        top: 1480px;
+        right: 20%;
+        width: 150%;
+        height: 100px;
+    }
+}
+
+
+
+.education .max-width{
+    max-width: 1000px;
+}
+.education{
+    height: 100vh;
+    color: white;
+    display: flex;
+    padding-left: 2rem;
+    flex-direction: column;
+}
+.education .edu-title{
+    font-size: 60px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.education .row{
+    display: flex;
+    padding-top: 10rem;
+
+}
+.education .row .edu-text{
+    padding-right: 8rem;
+    line-height: 2em;
+}
+.education .row .elem h3{
+    padding-bottom: 1rem;
+}
+.education .row .elem h1{
+    padding-bottom: .5rem;
+}
+
+
+
+
+@media only screen  and(max-width:1200px){
+    .education{
+        height: 100vh;
+        margin-left: -50rem;
+    }
+}
+@media only screen  and(max-width:900px){
+    .education{
+        height: 60vh;
+        margin-left: -20px;
+    }
+    .education .row .edu-text {
+        display: inline;
+    }
+    .education .edu-text .elem{
+        padding-right: -3em;
+    }
+}
+
+@media only screen  and(max-width:800px){
+    .education{
+        height: 60vh;
+    }
+}
+@media only screen  and(max-width:600px){
+    .education{
+        height: 60vh;
+    }
+}
+
+
+
+
+
+
+
+/* project section styling */
+
+.title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    padding-bottom: 5rem;
+}
+.project .serv-content .card{
+    width: calc(33% - 10px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 90px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.project .serv-content .card:hover{
+    background: crimson;
+}
+.project .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.project .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.project .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.project .serv-content .card:hover i{
+    color: #fff;
+}
+.project .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.project .serv-content .card .text a{
+    color: white;
+    text-decoration: none;
+}
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+   .project{
+    height: 100vh;
+   }
+}
+
+@media (max-width: 991px) {
+    .project .max-width{
+        padding: 0 50px;
+    }
+    .project{
+        height: 100v;
+    }
+}
+@media (max-width: 947px){
+  .project{
+    height: 100vh;
+    padding-bottom: 60rem;
+  }
+    .project .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        overflow: visible;
+    }
+}
+@media (max-width: 690px) {
+   .project .max-width{
+        padding: 0 23px;
+    }
+    .project .serv-content .card{
+       width: 100%;
+    }
+}
+
+
+.contact{
+    padding-top: 10rem;
+}
+.contact .max-width{
+    width: 800px;
+}
+.contact .con-left{
+    color: white;
+    margin-top: -5em;
+    margin-left: -5em;
+}
+.contact .con-left .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .con-left .head img{
+    position: relative;
+    top: 10px;
+    width: 400px;
+    height: 100px;
+    right: 10%;
+}
+.con-left .head .con-title{
+    font-size: 65px;
+    width: 80%;
+}
+.con-left .head .con-title span{
+    margin-left: 4rem;
+}
+.con-left .head p{
+    font-size: 18px;
+    padding-right: 5em;
+    letter-spacing: .2em;
+}
+.contact .con-left .card{
+    padding-top: 20px;
+    color: #444;
+}
+.contact .con-left .card .phone,
+.contact .con-left .card .fb{
+    margin-bottom: 15px;
+    background: white;
+    padding:10px 45px;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.contact .con-right{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:8rem;
+}
+.contact .con-right input{
+    padding: 10px;
+    width: 150%;
+    margin-bottom: 1.5rem;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 2.5em;
+}
+::placeholder{
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 1200px) {
+    .contact .column{
+        height: 100vh;
+        margin-bottom: 20px;
+        overflow: visible;
+    }
+}
+@media (max-width: 991px) {
+    .contact .max-width{
+        padding: 0 50px;
+    }
+    .contact{
+        height: 100v;
+    }
+}
+@media (max-width: 947px){
+  .contact{
+    height: 100vh;
+    padding-bottom: 60rem;
+  }
+    .contact .column {
+        width: calc(70% - 20px);
+        margin-bottom: 10px;
+        overflow: visible;
+    }
+    .contact .con-left{
+        display: inline;
+        padding-left: 40px;
+    }
+    .contact .column .con-right{
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 690px) {
+   .project .max-width{
+        padding: 0 23px;
+    }
+    .project .serv-content .card{
+       width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .contact .con-left{
+        padding-left: 10px;
+    }
+    .contact .column .con-right{
+        padding-top: 20px;
+        margin-left: 0;
+    }
+ }
